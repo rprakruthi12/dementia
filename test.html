@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MOCA Test</title>
+  <link rel="stylesheet" type="text/css" href="Tstyle.css">
+</head>
+<body>
+  <h1>MOCA Test</h1>
+  <div id="questions">
+    <div id="question1" class="question">
+      <h2>Question 1</h2>
+      <p>Ask the patient to trace the diagram in order.</p>
+      <canvas id="canvas1" width="200" height="200"></canvas>
+    </div>
+
+    <div id="question2" class="question">
+      <h2>Question 2</h2>
+      <p>Ask the patient to copy the cube.</p>
+      <canvas id="canvas2" width="200" height="200"></canvas>
+    </div>
+
+    <div id="question3" class="question">
+      <h2>Question 3</h2>
+      <p>Ask the patient to draw a clock (ten past eleven).</p>
+      <canvas id="canvas3" width="200" height="200"></canvas>
+    </div>
+
+    <div id="question4" class="question">
+      <h2>Question 4</h2>
+      <p>[i] Ask the patient to name the first animal.</p>
+      <input type="text" id="animal1" />
+      <p>[ii] Ask the patient to name the second animal.</p>
+      <input type="text" id="animal2" />
+      <p>[iii] Ask the patient to name the third animal.</p>
+      <input type="text" id="animal3" />
+    </div>
+
+    <div id="question5" class="question">
+      <h2>Question 5</h2>
+      <p>Read "Face", "Velvet", "Church", "Daisy", "Red", and ask the patient to repeat (do two trials and a recall later in the exam).</p>
+      <p>Trial 1:</p>
+      <input type="text" id="trial1" />
+      <p>Trial 2:</p>
+      <input type="text" id="trial2" />
+      <p>Recall:</p>
+      <input type="text" id="recall" />
+    </div>
+
+    <div id="question6" class="question">
+      <h2>Question 6</h2>
+      <p>Read list of digits (2, 1, 8, 5, 4) at 1 digit/sec and ask the patient to repeat them in the forward order.</p>
+      <input type="text" id="forwardDigits" />
+    </div>
+
+    <div id="question7" class="question">
+      <h2>Question 7</h2>
+      <p>Read list of digits (7, 4, 2) at 1 digit/sec and ask the patient to repeat them in the backward order.</p>
+      <input type="text" id="backwardDigits" />
+    </div>
+
+    <div id="question8" class="question">
+      <h2>Question 8</h2>
+      <p>Read list of letters and ask the patient to tap with their hand at each letter.</p>
+      <p>A: FBAC MNAA JKLB AFAK DEAA AJAM OFAAB</p>
+    </div>
+
+    <div id="question9" class="question">
+      <h2>Question 9</h2>
+      <p>Ask the patient to do five serial 7 subtractions starting at 100; the patient should say 93, 86, 79, 72, 65.</p>
+      <input type="text" id="subtractionAnswer" />
+    </div>
+
+    <h2>Question 10:</h2>
+            <p>Read and repeat the following sentence:</p>
+            <p>"I only know that John is the one to help today"</p>
+            <input type="text" id="question10" required>
+
+            <h2>Question 11:</h2>
+            <p>Read and repeat the following sentence:</p>
+            <p>"The cat always hid under the couch when dogs were in the room"</p>
+            <input type="text" id="question11" required>
+
+            <h2>Question 12:</h2>
+            <p>How many words can you name that begin with the letter F in 1 minute?</p>
+            <input type="number" id="question12" min="0" required>
+
+            <h2>Question 13:</h2>
+            <p>What is the similarity between a train and a bicycle?</p>
+            <input type="text" id="question13" required>
+
+            <h2>Question 14:</h2>
+            <p>What is the similarity between a watch and a ruler?</p>
+            <input type="text" id="question14" required>
+
+            <h2>Question 15:</h2>
+            <p>Recall the words with no cue from the memory test previously conducted:</p>
+            <p>"Face", "Velvet", "Church", "Daisy", "Red"</p>
+            <input type="text" id="question15" required>
+
+    <button id="submitBtn" onclick="validateAnswers()"><a href="C:\Users\prakrur\Downloads\dementia\result.html">submit</a></button>
+  </div>
+
+  <script src="Tscript.js"></script>
+</body>
+</html>

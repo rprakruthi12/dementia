@@ -1,0 +1,33 @@
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  #fileInput {
+    display: none;
+  }
+  
+  #cameraButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  #imagePreview {
+    margin-top: 20px;
+  }
+  
+  #imagePreview img {
+    max-width: 100%;
+  }
+  
